@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="305dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="460dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="36dp"
+        android:text="View"
+        app:layout_constraintBottom_toTopOf="@+id/lv_StudentList"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="36dp"
+        android:text="Add"
+        app:layout_constraintBottom_toTopOf="@+id/lv_StudentList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_view"
+        app:layout_constraintTop_toBottomOf="@+id/et_age"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ListView
+        android:id="@+id/lv_StudentList"
+        android:layout_width="308dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="296dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
